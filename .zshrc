@@ -99,3 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export JAVA_17_HOME=$(/usr/libexec/java_home -v 17)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v 11.0.11)
+export JAVA_8_HOME=$(/usr/libexec/java_home -v 1.8.0_242)
+alias java17="export JAVA_HOME=$JAVA_17_HOME"
+alias java11="export JAVA_HOME=$JAVA_11_HOME"
+alias java8="export JAVA_HOME=$JAVA_8_HOME"
+#set default to Java 8
+java8
+export PATH="/opt/homebrew/opt/scala@2.13/bin:$PATH"
